@@ -11,7 +11,7 @@ class GitContext < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Darwin_x86_64.tar.gz"
-      sha256 "3fd552b769d0d09d814cd94d257e4552b31170d0c3e1c5ee746aa7931cbda770"
+      sha256 "a1c82c6dc57772c4f2badc2ca9a6a379f5049d68297dae97ce79576f21a4948b"
 
       def install
         bin.install "git-context"
@@ -19,7 +19,7 @@ class GitContext < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Darwin_arm64.tar.gz"
-      sha256 "25629972b944c58f4339f3c678dfc75dbc20107dea22df37238f2aed1299309d"
+      sha256 "6a5c7081cc76ce3283850bbec32a8fc113e431316422f197a1abadb5f39fa1e9"
 
       def install
         bin.install "git-context"
@@ -30,14 +30,14 @@ class GitContext < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Linux_x86_64.tar.gz"
-      sha256 "67442aab73f3e76c023c3c42f39dbe5bd1ce99d2e7cb11b5b3dd56bdc7557d7f"
+      sha256 "ffeac73b5ed2d03b32797f09b404751f77b0a562d8b254582b5a4dd46b44170a"
       def install
         bin.install "git-context"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Linux_arm64.tar.gz"
-      sha256 "5d8bdf961760beb6f7df9db7bbf29278dd6d4e17ecec558c504dabdd7a9fc879"
+      sha256 "6b32491f27df329cbeb7617869f0043a56a55b3b93cd3f589508ce94cba62e11"
       def install
         bin.install "git-context"
       end
