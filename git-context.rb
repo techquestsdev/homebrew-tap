@@ -5,21 +5,21 @@
 class GitContext < Formula
   desc "A powerful CLI tool for managing multiple Git configuration profiles"
   homepage "https://github.com/techquestsdev/git-context"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/techquestsdev/git-context/releases/download/v1.0.0/git-context_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "b881d78ce618e1448c7385665b4a51c20e29fb9a0f1d47d1619fb418fa630a76"
+      url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "3fd552b769d0d09d814cd94d257e4552b31170d0c3e1c5ee746aa7931cbda770"
 
       def install
         bin.install "git-context"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/techquestsdev/git-context/releases/download/v1.0.0/git-context_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "df6c77886bc98744e7b8f4a71da19813e4ab11d7d0b1bf095caa22d0db44bc94"
+      url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "25629972b944c58f4339f3c678dfc75dbc20107dea22df37238f2aed1299309d"
 
       def install
         bin.install "git-context"
@@ -29,15 +29,15 @@ class GitContext < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/git-context/releases/download/v1.0.0/git-context_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "3a8521c51212e38822d69dc8dcf0147cbdb63b06279150ea8e63923ea9ddfb2f"
+      url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "67442aab73f3e76c023c3c42f39dbe5bd1ce99d2e7cb11b5b3dd56bdc7557d7f"
       def install
         bin.install "git-context"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/git-context/releases/download/v1.0.0/git-context_1.0.0_Linux_arm64.tar.gz"
-      sha256 "fc33812c0cc9e8174af00b9f2e5b2747605346b45a52ab5920bafc1430c6484a"
+      url "https://github.com/techquestsdev/git-context/releases/download/v1.1.0/git-context_1.1.0_Linux_arm64.tar.gz"
+      sha256 "5d8bdf961760beb6f7df9db7bbf29278dd6d4e17ecec558c504dabdd7a9fc879"
       def install
         bin.install "git-context"
       end
