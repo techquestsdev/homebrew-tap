@@ -1,4 +1,4 @@
-class MacosFree < Formula
+class MacFree < Formula
   desc "A 'free' command replacement for macOS - displays memory usage like Linux free"
   homepage "https://github.com/techquestsdev/mac-free"
   url "https://github.com/techquestsdev/mac-free/releases/download/v1.0.0/mac-free-v1.0.0-darwin-arm64.tar.gz"
