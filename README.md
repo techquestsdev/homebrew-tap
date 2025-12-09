@@ -4,6 +4,16 @@ Official Homebrew tap for TechQuests developer tools.
 
 ## Available Formulae
 
+### mac-free
+
+A `free` command replacement for macOS that displays memory usage information similar to the Linuxi `free` command.
+
+**Features:**
+
+- Displays total, used, free, shared, buffer/cache, and available memory
+- Supports human-readable output
+- Simple and easy to use
+
 ### crontab-guru
 
 Interactive terminal-based cron expression editor built with Go and Bubble Tea.
@@ -39,6 +49,9 @@ brew tap techquestsdev/tap
 Then install any of the available tools:
 
 ```bash
+# Install mac-free
+brew install mac-free
+
 # Install crontab-guru
 brew install crontab-guru
 
@@ -51,6 +64,9 @@ brew install git-context
 You can also install directly without adding the tap first:
 
 ```bash
+# Install mac-free
+brew install techquestsdev/tap/mac-free
+
 # Install crontab-guru
 brew install techquestsdev/tap/crontab-guru
 
@@ -64,7 +80,7 @@ To update to the latest versions:
 
 ```bash
 brew update
-brew upgrade crontab-guru git-context
+brew upgrade mac-free crontab-guru git-context
 ```
 
 ## Uninstalling
@@ -72,6 +88,8 @@ brew upgrade crontab-guru git-context
 To remove a tool:
 
 ```bash
+brew uninstall mac-free
+# or
 brew uninstall crontab-guru
 # or
 brew uninstall git-context
@@ -83,16 +101,9 @@ To remove the tap:
 brew untap techquestsdev/tap
 ```
 
-## Supported Platforms
-
-All tools support:
-
-- **macOS**: Intel (x86_64) and Apple Silicon (ARM64)
-- **Linux**: Intel (x86_64) and ARM64
-
 ## License
 
-All formulae are distributed under the MIT License.
+All formulae are distributed under the [MIT](https://choosealicense.com/licenses/mit/) License.
 
 ## Contributing
 
