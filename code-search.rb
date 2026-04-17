@@ -5,21 +5,21 @@
 class CodeSearch < Formula
   desc "Self-hosted code search and bulk operations across all your repositories"
   homepage "https://code-search.techquests.dev"
-  version "1.0.0"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/techquestsdev/code-search/releases/download/v1.0.0/code-search_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "f75bea5a9c88baf643105e50d3c1483ccffc2531de7e07a276bb3e0057bd2737"
+      url "https://github.com/techquestsdev/code-search/releases/download/v1.1.0/code-search_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "c4aa89de9140a129003cddf225074682d69fa1b88a8d041d5f445f0afa108b41"
 
       define_method(:install) do
         bin.install "code-search"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/techquestsdev/code-search/releases/download/v1.0.0/code-search_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "42a1be6a7e9abdaaccbdfffd8e9e19e150d22cd10feea2d0bcd53395d3d7891b"
+      url "https://github.com/techquestsdev/code-search/releases/download/v1.1.0/code-search_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "c9dab0069b05a9b441bdb014f9db84bd9b9ebf19d598e671b2721973c2d2c908"
 
       define_method(:install) do
         bin.install "code-search"
@@ -29,15 +29,15 @@ class CodeSearch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/code-search/releases/download/v1.0.0/code-search_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "1aaadd3a3893d77246ff1cfda46f8416d8514b36414b112582f71980a4aa5287"
+      url "https://github.com/techquestsdev/code-search/releases/download/v1.1.0/code-search_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "5b0c9a57826901ee5f7420d2b39e88a8f6747a71acb719685410a59d0b01874c"
       define_method(:install) do
         bin.install "code-search"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/code-search/releases/download/v1.0.0/code-search_1.0.0_Linux_arm64.tar.gz"
-      sha256 "2ed2c5800ff4c4cfc2fc0ed0320f5efc377f2ccd37b937279bceb1db19088292"
+      url "https://github.com/techquestsdev/code-search/releases/download/v1.1.0/code-search_1.1.0_Linux_arm64.tar.gz"
+      sha256 "3a9105e66eda535c1fac744739c7d10db5f77740a6077945f298fff3449414d9"
       define_method(:install) do
         bin.install "code-search"
       end
