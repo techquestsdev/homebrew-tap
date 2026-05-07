@@ -5,23 +5,23 @@
 class Howto < Formula
   desc "AI-powered command-line assistant for shell commands"
   homepage "https://github.com/techquestsdev/howto"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/techquestsdev/howto/releases/download/v1.0.0/howto_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "ff0e42bb99392890dc050e7b3491888ecef985a619d581890c28f871168db828"
+      url "https://github.com/techquestsdev/howto/releases/download/v1.1.0/howto_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "89a3ddcdc09f0c776aad5dd3276c5d759e4569ad90e65be2d3a36e5db503afbb"
 
-      def install
+      define_method(:install) do
         bin.install "howto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/techquestsdev/howto/releases/download/v1.0.0/howto_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "7e8f4e826af6a39139622ff365406283ed790898c6efc747bfa83193cb4a0114"
+      url "https://github.com/techquestsdev/howto/releases/download/v1.1.0/howto_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "9dd45c36d77033b11f22d6f17097671e1c5900f03bd8dd0a8b35cb387e549892"
 
-      def install
+      define_method(:install) do
         bin.install "howto"
       end
     end
@@ -29,16 +29,16 @@ class Howto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/howto/releases/download/v1.0.0/howto_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "93d929e434f496715465747c884e9fdaf24b3cf8a0cada46e9843e4544c09273"
-      def install
+      url "https://github.com/techquestsdev/howto/releases/download/v1.1.0/howto_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "ebfa89a73697decbcfff77456639315c5be345e2df4fa32805ff4f0e2c28ffd9"
+      define_method(:install) do
         bin.install "howto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/howto/releases/download/v1.0.0/howto_1.0.0_Linux_arm64.tar.gz"
-      sha256 "7661dc35e0eb5d213b947dab78f86ea65f46900798a4f6bd0d2753879819fc8a"
-      def install
+      url "https://github.com/techquestsdev/howto/releases/download/v1.1.0/howto_1.1.0_Linux_arm64.tar.gz"
+      sha256 "ee8e7bc76c3e1cedb5f561b7804011f964059586b878cb2d9913ab44fd4d2920"
+      define_method(:install) do
         bin.install "howto"
       end
     end
