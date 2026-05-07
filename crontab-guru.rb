@@ -5,23 +5,23 @@
 class CrontabGuru < Formula
   desc "Interactive terminal-based cron expression editor built with Go and Bubble Tea"
   homepage "https://github.com/techquestsdev/crontab-guru"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.1/crontab-guru_1.0.1_Darwin_x86_64.tar.gz"
-      sha256 "bb0f26016b6745f662d992011c382b29c6234c91e994d91be43f58b6aff56a9c"
+      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.2/crontab-guru_1.0.2_Darwin_x86_64.tar.gz"
+      sha256 "0a3a622caa2e08c62a6ee75e7ffbc8770a55306367c6db14bf600df8aa642519"
 
-      def install
+      define_method(:install) do
         bin.install "crontab-guru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.1/crontab-guru_1.0.1_Darwin_arm64.tar.gz"
-      sha256 "fdb19d72445811445f460fd2b258ce8c4882d3b9ab9a54afc08a4aadf1771637"
+      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.2/crontab-guru_1.0.2_Darwin_arm64.tar.gz"
+      sha256 "cae71e5e85693e288df93bd099a91a86c4bc16a7a30d6e02fd276d2ec4caffdd"
 
-      def install
+      define_method(:install) do
         bin.install "crontab-guru"
       end
     end
@@ -29,16 +29,16 @@ class CrontabGuru < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.1/crontab-guru_1.0.1_Linux_x86_64.tar.gz"
-      sha256 "cd0d3a2428754d3eca5fa27a29b18439470c4dd41ecf64a261bd63a7c1e0deef"
-      def install
+      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.2/crontab-guru_1.0.2_Linux_x86_64.tar.gz"
+      sha256 "ae9b16ed9255dd3c1ae67956d5eff2b7e1459e60ffda3810e88a4229c67c2248"
+      define_method(:install) do
         bin.install "crontab-guru"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.1/crontab-guru_1.0.1_Linux_arm64.tar.gz"
-      sha256 "bdfbbc2aa39fdd141d3b742cd64ac18a7e0b672bd4ba4545977928c616a70148"
-      def install
+      url "https://github.com/techquestsdev/crontab-guru/releases/download/v1.0.2/crontab-guru_1.0.2_Linux_arm64.tar.gz"
+      sha256 "b9e0c263f05303514977864ab3cf44c790be68473c561e613cbe386b0c6ed541"
+      define_method(:install) do
         bin.install "crontab-guru"
       end
     end
